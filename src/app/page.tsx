@@ -78,7 +78,7 @@ export default function BioLink() {
             <img 
               src={images.instagram} 
               alt="Instagram" 
-              className="w-6 h-6 object-contain social-icon-filter group-hover:scale-120 group-hover:brightness-200"
+              className="w-6 h-6 object-contain social-icon-filter group-hover:scale-110 group-hover:invert"
             />
           </a>
           <a 
@@ -90,7 +90,7 @@ export default function BioLink() {
             <img 
               src={images.linkedin} 
               alt="LinkedIn" 
-              className="w-6 h-6 object-contain social-icon-filter group-hover:scale-120 group-hover:brightness-200"
+              className="w-6 h-6 object-contain social-icon-filter group-hover:scale-110 group-hover:invert"
             />
           </a>
         </div>

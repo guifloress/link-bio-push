@@ -48,8 +48,8 @@
 }
 
 .social-icon-filter {
-  filter: invert(0.8);
-  transition: filter 0.3s ease;
+  filter: invert(0.6);
+  transition: filter 0.3s ease, transform 0.3s ease;
 }
 
 .social-icon-filter:hover {
