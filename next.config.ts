@@ -2,9 +2,10 @@ import type {NextConfig} from 'next';
 
 const nextConfig: NextConfig = {
   output: 'export',
-  // COMENTADO PARA FUNCIONAR NO PREVIEW DO STUDIO. 
-  // Descomente a linha abaixo antes de rodar 'npm run build' para a Hostinger.
-  // basePath: '/bio',
+  // Ativado para que os arquivos apontem para hephesto.com/bio
+  basePath: '/bio',
+  // assetPrefix também ajuda a garantir que CSS e JS sejam carregados da pasta correta
+  assetPrefix: '/bio',
   typescript: {
     ignoreBuildErrors: true,
   },

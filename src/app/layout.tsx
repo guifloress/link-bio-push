@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: 'BioLink - Guilherme Florentino',
   description: 'Web Designer Portfolio and Links',
   icons: {
+    // O Next.js com basePath resolverá isso para /bio/favicon.svg automaticamente
     icon: '/favicon.svg',
   },
 };
