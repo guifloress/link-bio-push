@@ -4,6 +4,9 @@ import './globals.css';
 export const metadata: Metadata = {
   title: 'BioLink - Guilherme Florentino',
   description: 'Web Designer Portfolio and Links',
+  icons: {
+    icon: '/bio/favicon.svg',
+  },
 };
 
 export default function RootLayout({
