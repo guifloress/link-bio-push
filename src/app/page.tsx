@@ -19,7 +19,7 @@ export default function BioLink() {
         {/* Profile Area */}
         <div className="mt-[70px] mb-8 text-center flex flex-col items-center">
           <div className="relative group">
-            <div className="profile-img-container w-[150px] h-[150px] rounded-full bg-white border-4 border-biored/10 p-3 mb-4 shadow-[0_0_25px_rgba(175,12,12,0.2),0_8px_20px_rgba(0,0,0,0.3)] transition-all duration-300 group-hover:scale-105 group-hover:rotate-6 group-hover:shadow-[0_0_35px_rgba(175,12,12,0.4),0_8px_25px_rgba(0,0,0,0.4)] overflow-hidden flex items-center justify-center">
+            <div className="profile-img-container w-[110px] h-[110px] rounded-full bg-white border-4 border-biored/10 p-2 mb-4 shadow-[0_0_25px_rgba(175,12,12,0.2),0_8px_20px_rgba(0,0,0,0.3)] transition-all duration-300 group-hover:scale-105 group-hover:rotate-6 group-hover:shadow-[0_0_35px_rgba(175,12,12,0.4),0_8px_25px_rgba(0,0,0,0.4)] overflow-hidden flex items-center justify-center">
               <img 
                 src={images.logo} 
                 alt="Logo" 
