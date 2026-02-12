@@ -7,6 +7,18 @@ import { useToast } from "@/hooks/use-toast"
 export function ShareButton() {
   const { toast } = useToast()
 
+  const copyToClipboard = async () => {
+    try {
+      await navigator.clipboard.writeText(window.location.href)
+      toast({
+        title: "Link Copiado!",
+        description: "O link foi copiado para sua área de transferência.",
+      })
+    } catch (err) {
+      console.error('Failed to copy: ', err)
+    }
+  }
+
   const handleShare = async () => {
     if (navigator.share) {
       try {
@@ -16,18 +28,11 @@ export function ShareButton() {
           url: window.location.href,
         })
       } catch (error) {
-        console.error('Error sharing', error)
+        // Se o compartilhamento for negado ou falhar, tentamos copiar para o clipboard
+        await copyToClipboard()
       }
     } else {
-      try {
-        await navigator.clipboard.writeText(window.location.href)
-        toast({
-          title: "Link Copiado!",
-          description: "O link foi copiado para sua área de transferência.",
-        })
-      } catch (err) {
-        console.error('Failed to copy: ', err)
-      }
+      await copyToClipboard()
     }
   }
 
