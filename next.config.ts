@@ -2,9 +2,9 @@ import type {NextConfig} from 'next';
 
 const nextConfig: NextConfig = {
   output: 'export',
-  // Se o Internal Server Error persistir na visualização do Studio, 
-  // comente a linha abaixo temporariamente para testar localmente.
-  basePath: '/bio',
+  // COMENTADO PARA FUNCIONAR NO PREVIEW DO STUDIO. 
+  // Descomente a linha abaixo antes de rodar 'npm run build' para a Hostinger.
+  // basePath: '/bio',
   typescript: {
     ignoreBuildErrors: true,
   },

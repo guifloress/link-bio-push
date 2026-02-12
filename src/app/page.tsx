@@ -42,6 +42,19 @@ export default function BioLink() {
 
         {/* Link Cards */}
         <div className="flex flex-col gap-4 w-full">
+          {/* WhatsApp / Budget Button */}
+          <a 
+            href="https://wa.me/5554999516977?text=Ol%C3%A1,%20vim%20pelo%20Instagram%20e%20gostaria%20de%20fazer%20um%20or%C3%A7amento%20para%20meu%20projeto." 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="link-card-shine relative flex items-center justify-between p-[18px_20px] rounded-xl bg-white/5 border border-white/10 text-white font-medium backdrop-blur-md transition-all duration-300 hover:bg-biored/15 hover:-translate-y-1 hover:border-biored hover:shadow-xl overflow-hidden group"
+          >
+            <div className="w-[30px] flex justify-center items-center">
+              <i className="fa-brands fa-whatsapp text-2xl text-white group-hover:scale-110 transition-transform"></i>
+            </div>
+            <span className="flex-grow text-center pr-8">Orçamento</span>
+          </a>
+
           <a 
             href="https://hephesto.com/" 
             target="_blank" 
