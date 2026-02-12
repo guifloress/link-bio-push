@@ -96,7 +96,7 @@ export default function BioLink() {
         </div>
 
         {/* Footer */}
-        <footer className="mt-10 mb-5 text-xs text-white/40">
+        <footer className="mt-10 mb-5 text-xs text-white/40 text-center px-4">
           <p>&copy; {currentYear} Guilherme Florentino. Todos os direitos reservados.</p>
         </footer>
       </div>
