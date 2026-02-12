@@ -1,3 +1,40 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "logo",
+      "description": "Main Profile Logo",
+      "imageUrl": "https://raw.githubusercontent.com/guifloress/link-bio-flore/main/LOGO.svg",
+      "imageHint": "logo brand"
+    },
+    {
+      "id": "laptop",
+      "description": "Laptop Icon",
+      "imageUrl": "https://raw.githubusercontent.com/guifloress/link-bio-flore/main/laptop.svg",
+      "imageHint": "laptop computer"
+    },
+    {
+      "id": "behance",
+      "description": "Behance Icon",
+      "imageUrl": "https://raw.githubusercontent.com/guifloress/link-bio-flore/main/behance.svg",
+      "imageHint": "behance portfolio"
+    },
+    {
+      "id": "email",
+      "description": "Email Icon",
+      "imageUrl": "https://raw.githubusercontent.com/guifloress/link-bio-flore/main/email.svg",
+      "imageHint": "email envelope"
+    },
+    {
+      "id": "instagram",
+      "description": "Instagram Icon",
+      "imageUrl": "https://raw.githubusercontent.com/guifloress/link-bio-flore/main/instagram.svg",
+      "imageHint": "instagram social"
+    },
+    {
+      "id": "linkedin",
+      "description": "LinkedIn Icon",
+      "imageUrl": "https://raw.githubusercontent.com/guifloress/link-bio-flore/main/linkedin.svg",
+      "imageHint": "linkedin professional"
+    }
+  ]
 }
