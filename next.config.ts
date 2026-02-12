@@ -2,6 +2,8 @@ import type {NextConfig} from 'next';
 
 const nextConfig: NextConfig = {
   output: 'export',
+  // Se o Internal Server Error persistir na visualização do Studio, 
+  // comente a linha abaixo temporariamente para testar localmente.
   basePath: '/bio',
   typescript: {
     ignoreBuildErrors: true,

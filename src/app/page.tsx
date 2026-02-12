@@ -1,14 +1,20 @@
-import Image from 'next/image'
+"use client"
+
+import { useState, useEffect } from 'react'
 import { PlaceHolderImages } from '@/lib/placeholder-images'
 import { ShareButton } from '@/components/ShareButton'
 
 export default function BioLink() {
+  const [currentYear, setCurrentYear] = useState<number | null>(null)
+
+  useEffect(() => {
+    setCurrentYear(new Date().getFullYear())
+  }, [])
+
   const images = PlaceHolderImages.reduce((acc, curr) => {
     acc[curr.id] = curr.imageUrl
     return acc
   }, {} as Record<string, string>)
-
-  const currentYear = new Date().getFullYear()
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-center p-4">
@@ -96,8 +102,8 @@ export default function BioLink() {
         </div>
 
         {/* Footer */}
-        <footer className="mt-10 mb-5 text-xs text-white/40 text-center px-4">
-          <p>&copy; {currentYear} Guilherme Florentino. Todos os direitos reservados.</p>
+        <footer className="mt-10 mb-5 text-xs text-white/40 text-center px-4 w-full">
+          <p>&copy; {currentYear || '2025'} Guilherme Florentino. Todos os direitos reservados.</p>
         </footer>
       </div>
     </main>
